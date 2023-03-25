@@ -1,0 +1,109 @@
+<html>
+<head>
+
+  <title>Bootstrap 4 | Components </title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="Homepage.html">Demo exam</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+
+      </div>
+    </div>
+  </nav>
+
+
+<html>
+<head>
+	<title>Sign Up</title>
+	<style>
+		body {
+			background-image: url('https://picr.padmashree.org/wp-content/uploads/2014/07/university-background-06.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		input[type=text], input[type=email], input[type=password] {
+			padding: 10px;
+			margin: 10px;
+			border-radius: 5px;
+			border: none;
+			width: 300px;
+			font-size: 16px;
+			text-align: center;
+		}
+		input[type=submit] {
+			padding: 10px;
+			margin: 10px;
+			border-radius: 5px;
+			border: none;
+			width: 300px;
+			font-size: 16px;
+			background-color: #4CAF50;
+			color: white;
+			cursor: pointer;
+		}
+		h1 {
+			margin-bottom: 30px;
+			font-size: 36px;
+			color: white;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<form action="https://sheetdb.io/api/v1/c1kl36senq6p4" method="post" id="sheetdb-form">
+		<h1>Sign Up</h1>
+		<input type="text" name="data[Full Name]" placeholder="Full Name" required>
+		<input type="email" name="data[Email]" placeholder="Email" required>
+		<input type="password" name="data[Password]" placeholder="Password" required>
+    <input type="password" name="data[phone number]" placeholder="phone number" required>
+    <input type="password" name="data[school name]" placeholder="school name" required>
+		<input type="submit" value="Sign Up">
+	</form>
+  <script>
+                                    var form = document.getElementById('sheetdb-form');
+                                form.addEventListener("submit", e => {
+                                  e.preventDefault();
+                                  fetch(form.action, {
+                                      method : "POST",
+                                      body: new FormData(document.getElementById("sheetdb-form")),
+                                  }).then(
+                                      response => response.json()
+                                  ).then((html) => {
+
+                                    window.open('pass.html', '_blank');
+
+                                  });
+                                });
+                                </script>
+</body>
+</html>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
